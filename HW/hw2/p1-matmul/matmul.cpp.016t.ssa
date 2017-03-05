@@ -1,0 +1,124 @@
+
+;; Function void matmuld(double**, double**, double**) (_Z7matmuldPPdS0_S0_, funcdef_no=0, decl_uid=2204, cgraph_uid=0)
+
+void matmuld(double**, double**, double**) (double * * a, double * * b, double * * c)
+{
+  int k;
+  int j;
+  int i;
+  long unsigned int _11;
+  long unsigned int _12;
+  double * * _14;
+  double * _15;
+  long unsigned int _16;
+  long unsigned int _17;
+  double * _18;
+  long unsigned int _19;
+  long unsigned int _20;
+  double * * _21;
+  double * _22;
+  long unsigned int _23;
+  long unsigned int _24;
+  double * _25;
+  double _26;
+  long unsigned int _27;
+  long unsigned int _28;
+  double * * _30;
+  double * _31;
+  long unsigned int _32;
+  long unsigned int _33;
+  double * _34;
+  double _35;
+  long unsigned int _36;
+  long unsigned int _37;
+  double * * _39;
+  double * _40;
+  long unsigned int _41;
+  long unsigned int _42;
+  double * _43;
+  double _44;
+  double _45;
+  double _46;
+
+  <bb 2>:
+  i_7 = 0;
+  goto <bb 10>;
+
+  <bb 3>:
+  j_9 = 0;
+  goto <bb 8>;
+
+  <bb 4>:
+  k_10 = 0;
+  goto <bb 6>;
+
+  <bb 5>:
+  _11 = (long unsigned int) i_1;
+  _12 = _11 * 8;
+  _14 = c_13(D) + _12;
+  _15 = *_14;
+  _16 = (long unsigned int) j_2;
+  _17 = _16 * 8;
+  _18 = _15 + _17;
+  _19 = (long unsigned int) i_1;
+  _20 = _19 * 8;
+  _21 = c_13(D) + _20;
+  _22 = *_21;
+  _23 = (long unsigned int) j_2;
+  _24 = _23 * 8;
+  _25 = _22 + _24;
+  _26 = *_25;
+  _27 = (long unsigned int) i_1;
+  _28 = _27 * 8;
+  _30 = a_29(D) + _28;
+  _31 = *_30;
+  _32 = (long unsigned int) k_3;
+  _33 = _32 * 8;
+  _34 = _31 + _33;
+  _35 = *_34;
+  _36 = (long unsigned int) k_3;
+  _37 = _36 * 8;
+  _39 = b_38(D) + _37;
+  _40 = *_39;
+  _41 = (long unsigned int) j_2;
+  _42 = _41 * 8;
+  _43 = _40 + _42;
+  _44 = *_43;
+  _45 = _35 * _44;
+  _46 = _26 + _45;
+  *_25 = _46;
+  k_48 = k_3 + 1;
+
+  <bb 6>:
+  # k_3 = PHI <k_10(4), k_48(5)>
+  if (k_3 <= 1023)
+    goto <bb 5>;
+  else
+    goto <bb 7>;
+
+  <bb 7>:
+  j_49 = j_2 + 1;
+
+  <bb 8>:
+  # j_2 = PHI <j_9(3), j_49(7)>
+  if (j_2 <= 1023)
+    goto <bb 4>;
+  else
+    goto <bb 9>;
+
+  <bb 9>:
+  i_50 = i_1 + 1;
+
+  <bb 10>:
+  # i_1 = PHI <i_7(2), i_50(9)>
+  if (i_1 <= 1023)
+    goto <bb 3>;
+  else
+    goto <bb 11>;
+
+  <bb 11>:
+  return;
+
+}
+
+

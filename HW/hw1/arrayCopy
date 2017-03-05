@@ -1,0 +1,28 @@
+#include <cstdlib>
+#include <cstdio>
+#include <cstring>
+#include <time.h>
+#include <sys/time.h>
+#include <math.h>
+#include "counters.h"
+#include "sum.cpp"
+#include "random.cpp"
+
+void copyArray(int n) {
+	//Create random array
+  	int arr[n];
+  	for(int i=0; i<n; i++) {
+	    arr[i] = i;
+  	}
+  	for(int i=n-1; i>=0; i--) {
+	    int j = rand() % (i+1);
+	    int temp = arr[j];
+    	arr[j] = arr[i];
+    	arr[i] = temp;
+  	}
+
+  	int arr2[n];
+  	for(int i=0; i<n; i++) {
+  		arr2[i] = arr[i];
+  	}
+}
