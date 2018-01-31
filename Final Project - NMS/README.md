@@ -18,3 +18,6 @@ Run correctness on single file from bichen's data
 python tests.py -c
 ~~~~
 
+# Results
+A copy of the final presentation is within the documentation folder.
+PDF versions of the final presentation and speedup analysis summary are in the home directory.  
