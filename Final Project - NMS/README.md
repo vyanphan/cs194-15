@@ -1,7 +1,7 @@
 # nms-speedup
 A highly parallelized implementation of non-maximum suppression for object detection, used primarily for autonomous self-driving cars.
 
-# Installation
+## Installation
 ~~~~
 make
 ~~~~
@@ -18,6 +18,6 @@ Run correctness on single file from bichen's data
 python tests.py -c
 ~~~~
 
-# Results
+## Results
 A copy of the final presentation is within the documentation folder.
 PDF versions of the final presentation and speedup analysis summary are in the home directory.  
